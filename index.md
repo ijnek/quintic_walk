@@ -24,12 +24,15 @@ git clone https://github.com/bit-bots/bitbots_motion.git
 Download dependencies
 ```
 git clone https://github.com/ros-sports/biped_interfaces.git
+git clone https://github.com/ros-sports/humanoid_base_footprint.git
 git clone https://github.com/SammyRamone/bio_ik.git
 git clone https://github.com/bit-bots/bitbots_tools.git
 git clone https://github.com/bit-bots/bitbots_msgs.git
 git clone https://github.com/bit-bots/bitbots_misc.git
 git clone https://github.com/bit-bots/humanoid_league_msgs.git
 git clone https://github.com/bit-bots/ros2_python_extension.git
+git clone https://github.com/bit-bots/dynamic_stack_decider.git
+git clone https://github.com/tylerjw/fp.git
 ```
 
 Resolve further dependencies automatically
