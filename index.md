@@ -53,7 +53,7 @@ git clone https://github.com/bit-bots/humanoid_robots_ros2.git
 
 cd ~/dev_ws
 colcon build --symlink-install --packages-up-to wolfgang_webots_sim
-colcon build --symlink-install --packages-up-to parallel_parameter_optimization
+colcon build --symlink-install --packages-up-to parallel_parameter_search
 colcon build --symlink-install --packages-up-to bez_moveit_config chape_moveit_config mrl_hsl_moveit_config nao_moveit_config nugus_moveit_config op3_moveit_config rfc_moveit_config  robotis_op2_moveit_config wolfgang_moveit_config
 ```
 
@@ -137,7 +137,7 @@ source ~/dev_ws/src/wolfgang_webots_sim/scripts/setenvs.sh
 
 Now you can start the optimization process 
 ```
-python3 ~/dev_ws/src/parallel_parameter_optimization/scripts/optimize_walk.py --type engine --robot bez --sim webots --sampler MOTPE --trials 1000 --storage mysql://root@localhost/example
+python3 ~/dev_ws/src/parallel_parameter_search/scripts/optimize_walk.py --type engine --robot bez --sim webots --sampler MOTPE --trials 1000 --storage mysql://root@localhost/example
 ```
 The parameters allow you to specify the type of robot, simulator and sampler, as well as further arguments for Optuna. Use the `--help` option for more details.
 
